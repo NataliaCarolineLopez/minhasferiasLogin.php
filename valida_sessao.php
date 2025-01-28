@@ -5,7 +5,7 @@ session_start();
 // Verifica se a variável de sessão 'usuario' não está definida.
 if (!isset($_SESSION['usuarios'])) {
     // Se o usuário não estiver logado, redireciona para a página de login.
-    header('Location: login.php');
+    header('Location: usuarios.login.php');
     
     // Garante que o restante do código não seja executado após o redirecionamento.
     exit();

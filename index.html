@@ -2,89 +2,77 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: floralwhite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .login-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: hotpink;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: deeppink;
-        }
-        .error {
-            color: red;
-            text-align: center;
-            font-size: 14px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minhas Férias de Verão</title>
 </head>
 <body>
 
-    <div class="login-container">
-        <h2>Entrar</h2>
-        <form action="login.php" method="POST">
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Digite seu email">
-            </div>
-            <div class="form-group">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
+    <header>
+        <h1>Minhas Férias</h1>
+    </header>
 
-        <!-- Mensagens de erro (se houver) -->
-        <div class="error">
-            <?php
-            // Mensagem de erro de login, se houver
-            if (isset($_GET['erro'])) {
-                echo "Email ou senha incorretos!";
-            }
-            ?>
+    
+    <nav>
+        <a href="#churras">Churrasco em família</a>
+        <a href="#viagem">Visita na casa dos avós</a>
+        <a href="#festa">Aniversário do primo</a>
+        <a href="#descanso">Descanso</a>
+    </nav>
+
+     <main>
+        <div class="content">
+            <section>
+                <article id="churrasco">
+                    <h2>Churrasco com a família e amigos conhecidos</h2>
+                    <p>No final de dezembro fui para um churrasco no final de tarde na casa de um primo,<br> onde comemos, dançamos, e curtimos bastante. </p>
+                    <div class="churras">
+                    <img src="MinhasFerias/churrasco.png.png" alt="Imagem do churrasco">
+                </article>
+
+        
+                <article id="viagem">
+                    <h2>Visita na casa dos avós</h2>
+                    <p>No penúltimo dia das férias fui ao interior visitar os meus avós, fomos no sábado <br> e voltamos no domingo, foi muito bom, rimos bastante e matamos a saudade.</p>
+                    <div class="viagem">
+                    <img src="MinhasFerias/avós.png.png" alt="Imagem do lugar"> 
+                </article>
+    
+                <article id="festa">
+                    <h2>Aniversário do primo em família</h2>
+                    <p>Comemoramos o aniversário do meu primo no salão do apartamento durante <br> a tarde, foi muito divertido, teve karaokê e churrasco.</p>
+                    <div class="festa">
+                    <img src="MinhasFerias/festasalaodefesta.png.png" alt="Imagem da festa">
+                </article>
+        
+                <article id="descanso">
+                    <h2>Momentos de Descanso</h2>
+                    <p>Entre uma aventura e outra, também reservei tempo para relaxar. <br>Brinquei bastante na rua, assisti a filmes e curti um bom descanso para recarregar <br> as energias.</p>
+                    <div class="descanso">
+                    <img src="MinhasFerias/descanso.png.png" alt="Imagem de descanso">
+                </article>
+            </section>
         </div>
-    </div>
 
+        <aside>
+            <h3>Atividades extras para se fazer nas férias</h3>
+            <p>Além das atividades principais, você também pode:</p>
+            <ul>
+                <li>Andar de bicicleta.</li>
+                <li>Conhecer locais, restaurantes novos.</li>
+                <li>Fazer uma festa com amigos.</li>
+                <li>Fotografar todos os momentos para lembrar para sempre.</li>
+                <li>Lavar suas joias</li>
+                <li>Fazer exercícios</li>
+                <li>Sair com a família</li>
+                <li>Tirar um tempo para autocuidado</li>
+                <li>Começar algum esporte</li>
+                <li>Fazer compras</li>
+            </ul>
+        </aside>
+     </main>
+    <footer>
+        <p>&copy; 2025 Minhas Férias. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
